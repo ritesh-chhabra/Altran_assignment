@@ -4,6 +4,7 @@ from flask import request
 from config import db
 from flask_restful import Resource
 from sqlalchemy import exc
+import hashlib
 
 # flask_restful class for handling GET and POST requests
 class UserResource(Resource):
@@ -23,10 +24,11 @@ class UserResource(Resource):
                        "message": errors
                    }, 500
         # preparing data for User Model
+        h = hashlib.md5(request.json["password"].encode())
         new_user = User(
             name = request.json["name"],
             email = request.json["email"],
-            password = request.json["password"],
+            password = h.hexdigest(),
             profile_pic_url = request.json["profile_pic_url"],
             mobile = request.json["mobile"]
         )
