@@ -17,17 +17,17 @@ a. GET /users\
 b. POST /users\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Body->\
 		{\
-			"name" : "<Value>",\
-			"email": "<Value>",\
-			"password": "<Value>", \
-			"profile_pic_url" : "<Value>", \
-			"mobile" : "<Value>",\
+			"name" : "String",\
+			"email": "String",\
+			"password": "String", \
+			"profile_pic_url" : "String", \
+			"mobile" : "String",\
 			"address": {\
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"house_num" : "<Value>", \
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"address_1": "<Value>",\
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"address_2": "<Value>", \
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"city": "<Value>", \
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"state": "<Value>",\
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pincode": <Value Int>\
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"house_num" : "String", \
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"address_1": "String",\
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"address_2": "String", \
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"city": "String", \
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"state": "String",\
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pincode": Integer\
 			}\
 		}
