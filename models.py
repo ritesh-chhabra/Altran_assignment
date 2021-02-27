@@ -13,7 +13,7 @@ class User(db.Model):
     email = db.Column(db.String(50))
     password = db.Column(db.String(50))
     profile_pic_url = db.Column(db.String(200))
-    mobile = db.Column(db.String(10))
+    mobile = db.Column(db.String(14))
     # adding the relatioship to model for Address class
     address = db.relationship(
         'Address',
