@@ -5,16 +5,16 @@ Steps to Deploy/Start Application
 Note - Make sure you have Python 3.5+ and MySQL installed
 
 1. Clone the project
-2. Execute requirements.txt to install dependencies.
+2. Execute requirements.txt to install dependencies.__
 	pip install -r requirements.txt
 3. Edit config.py -> dbName and flaskPort variables as per your requirement
-4. Now run the flask server.
+4. Now run the flask server.__
 	python main.py
 	
 5. Application supports below API's:
-a. GET /users
+a. GET /users__
 	Returns all the registered users
-b. POST /users
+b. POST /users__
 	Body->
 		{
 			"name" : "<Value>",
