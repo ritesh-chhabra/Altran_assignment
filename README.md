@@ -8,10 +8,12 @@ Note - Make sure you have Python 3.5+ and MySQL installed
 2. Execute requirements.txt to install dependencies.\
 	pip install -r requirements.txt
 3. Edit config.py -> dbName and flaskPort variables as per your requirement
-4. Now run the flask server.\
+4. Create db and tables using command:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python create_db.py
+5. Now run the flask server.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python main.py
 	
-5. Application supports below API's:
+6. Application supports below API's:
 a. GET /users\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns all the registered users
 b. POST /users\
